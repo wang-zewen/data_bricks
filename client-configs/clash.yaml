@@ -1,0 +1,120 @@
+# Clash 配置示例
+# 适用于 Clash for Windows, Clash for Android, ClashX 等客户端
+
+# 混合端口，HTTP 和 SOCKS5 用同一端口
+mixed-port: 7890
+
+# 允许局域网连接
+allow-lan: true
+
+# 绑定地址
+bind-address: "*"
+
+# Clash 路由工作模式
+# Rule: 规则模式
+# Global: 全局模式（所有流量通过代理）
+# Direct: 直连模式（所有流量直连）
+mode: Rule
+
+# 日志级别
+log-level: info
+
+# 外部控制器
+external-controller: 127.0.0.1:9090
+
+# 外部 UI
+external-ui: folder
+
+# DNS 配置
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 8.8.8.8
+  fallback:
+    - tls://1.1.1.1:853
+    - tls://dns.google:853
+
+# 代理服务器配置
+proxies:
+  # Databricks Xray 代理
+  - name: "Databricks-Proxy"
+    type: vmess
+    server: proxy.yourdomain.com    # 替换为您的域名
+    port: 443
+    uuid: YOUR_UUID_HERE            # 替换为您的 UUID
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    skip-cert-verify: false
+    network: tcp
+
+# 代理组
+proxy-groups:
+  # 主要代理选择
+  - name: "PROXY"
+    type: select
+    proxies:
+      - "Databricks-Proxy"
+      - "DIRECT"
+
+  # 自动选择（基于延迟）
+  - name: "AUTO"
+    type: url-test
+    proxies:
+      - "Databricks-Proxy"
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+  # 负载均衡
+  - name: "LOAD-BALANCE"
+    type: load-balance
+    proxies:
+      - "Databricks-Proxy"
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+
+# 规则
+rules:
+  # 局域网直连
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+
+  # 常见广告域名
+  - DOMAIN-SUFFIX,ad.com,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,analytics,REJECT
+
+  # Google 服务
+  - DOMAIN-SUFFIX,google.com,PROXY
+  - DOMAIN-SUFFIX,googleapis.com,PROXY
+  - DOMAIN-SUFFIX,googleusercontent.com,PROXY
+  - DOMAIN-SUFFIX,youtube.com,PROXY
+  - DOMAIN-SUFFIX,ytimg.com,PROXY
+
+  # 常用国外网站
+  - DOMAIN-SUFFIX,twitter.com,PROXY
+  - DOMAIN-SUFFIX,facebook.com,PROXY
+  - DOMAIN-SUFFIX,instagram.com,PROXY
+  - DOMAIN-SUFFIX,github.com,PROXY
+  - DOMAIN-SUFFIX,stackoverflow.com,PROXY
+
+  # 中国网站直连
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,baidu,DIRECT
+  - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,alipay,DIRECT
+
+  # GeoIP 中国直连
+  - GEOIP,CN,DIRECT
+
+  # 其他流量使用代理
+  - MATCH,PROXY

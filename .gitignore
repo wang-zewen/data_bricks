@@ -1,0 +1,91 @@
+# 环境变量文件
+.env
+*.env
+
+# 日志文件
+*.log
+logs/
+*.log.*
+
+# 临时文件
+*.tmp
+*.temp
+temp/
+tmp/
+
+# 密钥和证书
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Cloudflare 相关
+*.json
+!config-template.json
+!client-configs/*.json
+!package.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 备份文件
+*.bak
+*.backup
+backup/
+
+# 测试文件
+test/
+tests/
+*.test.sh
+
+# 构建产物
+dist/
+build/
+*.tar.gz
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+ENV/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# 私有配置
+connection-info.txt
+vmess-url.txt
+credentials.json
+tunnel-*.json
+
+# Databricks
+.databricks/
+databricks-cli.config

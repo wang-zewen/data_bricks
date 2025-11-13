@@ -1,0 +1,18 @@
+{
+  "remarks": "Databricks Xray Proxy",
+  "v": "2",
+  "ps": "Databricks-Proxy",
+  "add": "proxy.yourdomain.com",
+  "port": "443",
+  "id": "YOUR_UUID_HERE",
+  "aid": "0",
+  "scy": "auto",
+  "net": "tcp",
+  "type": "none",
+  "host": "",
+  "path": "",
+  "tls": "tls",
+  "sni": "proxy.yourdomain.com",
+  "alpn": "",
+  "fp": ""
+}
