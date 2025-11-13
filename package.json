@@ -1,0 +1,21 @@
+{
+  "name": "databricks-xray-bore",
+  "version": "1.0.0",
+  "description": "Xray proxy with bore.pub tunnel for Databricks",
+  "main": "index.js",
+  "author": "",
+  "repository": "",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
