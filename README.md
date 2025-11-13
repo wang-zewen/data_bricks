@@ -2,6 +2,31 @@
 
 这是一个在 Databricks 集群上快速部署 Xray 代理服务的完整解决方案，通过 Cloudflare Tunnel 将代理服务安全地暴露到公网。
 
+## 🎯 Databricks专用：单文件部署（推荐）
+
+**对于Databricks用户，我们提供了一个all-in-one部署脚本，只需一个文件即可完成所有配置！**
+
+```python
+# 在Databricks Notebook中，只需3步：
+
+# 1. 上传脚本到DBFS
+script = open('databricks-xray-allinone.sh').read()
+dbutils.fs.put("/databricks/init-scripts/xray.sh", script, True)
+
+# 2. 配置集群环境变量（可选）
+# Cluster → Advanced Options → Environment Variables
+# CF_TOKEN=your_token  # Cloudflare Token（可选）
+# TUNNEL_DOMAIN=proxy.yourdomain.com  # 域名（可选）
+
+# 3. 添加Init Script
+# Cluster → Advanced Options → Init Scripts
+# Path: dbfs:/databricks/init-scripts/xray.sh
+```
+
+**就这么简单！** 详细说明请查看 [DATABRICKS_DEPLOYMENT.md](DATABRICKS_DEPLOYMENT.md)
+
+---
+
 ## 📋 目录
 
 - [架构图](#架构图)
