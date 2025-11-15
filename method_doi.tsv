@@ -1,0 +1,22 @@
+编号	DOI	完整引用
+1	10.1093/nar/gks1193	Barrett T, Wilhite SE, Ledoux P, et al. NCBI GEO: archive for functional genomics data sets--update. Nucleic Acids Res. 2013;41(Database issue):D991-995.
+2	10.1038/s41587-020-0546-8	Goldman MJ, Craft B, Hastie M, et al. Visualizing and interpreting cancer genomics data via the Xena platform. Nat Biotechnol. 2020;38(6):675-678.
+3	10.1158/2159-8290.CD-12-0095	Cerami E, Gao J, Dogrusoz U, et al. The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data. Cancer Discov. 2012;2(5):401-404.
+4	10.3389/fimmu.2024.1424752	Chen C, Chen Z, Zhou Z, et al. T cell-related ubiquitination genes as prognostic indicators in hepatocellular carcinoma. Front Immunol. 2024;15:1424752.
+5	10.1016/j.cell.2021.04.048	Hao Y, Hao S, Andersen-Nissen E, et al. Integrated analysis of multimodal single-cell data. Cell. 2021;184(13):3573-3587.e29.
+6	10.1038/nbt.4096	Butler A, Hoffman P, Smibert P, Papalexi E, Satija R. Integrating single-cell transcriptomic data across different conditions, technologies, and species. Nat Biotechnol. 2018;36(5):411-420.
+7	10.1016/j.cels.2019.03.003	McGinnis CS, Murrow LM, Gartner ZJ. DoubletFinder: doublet detection in single-cell RNA sequencing data using artificial nearest neighbors. Cell Syst. 2019;8(4):329-337.e4.
+8	10.1038/s41592-019-0619-0	Korsunsky I, Millard N, Fan J, et al. Fast, sensitive and accurate integration of single-cell data with Harmony. Nat Methods. 2019;16(12):1289-1296.
+9	10.48550/arXiv.1802.03426	McInnes L, Healy J, Melville J. UMAP: uniform manifold approximation and projection for dimension reduction. arXiv preprint arXiv:1802.03426. 2018.
+10	10.1038/s41590-018-0276-y	Aran D, Looney AP, Liu L, et al. Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage. Nat Immunol. 2019;20(2):163-172.
+11	10.1093/nar/gkac947	Hu C, Li T, Xu Y, et al. CellMarker 2.0: a manually curated database of cell markers in human/mouse and web tools based on scRNA-seq data. Nucleic Acids Res. 2023;51(D1):D870-D876.
+12	10.1016/j.xinn.2021.100141	Wu T, Hu E, Xu S, et al. clusterProfiler 4.0: a universal enrichment tool for interpreting omics data. Innovation (Camb). 2021;2(3):100141.
+13	10.1038/s41467-021-21246-9	Jin S, Guerrero-Juarez CF, Zhang L, et al. Inference and analysis of cell-cell communication using CellChat. Nat Commun. 2021;12(1):1088.
+14	10.1186/1471-2105-9-559	Langfelder P, Horvath S. WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics. 2008;9:559.
+15	10.1111/j.2517-6161.1972.tb00899.x	Cox DR. Regression models and life-tables. J R Stat Soc Series B Stat Methodol. 1972;34(2):187-202.
+16	10.18637/jss.v033.i01	Friedman J, Hastie T, Tibshirani R. Regularization paths for generalized linear models via coordinate descent. J Stat Softw. 2010;33(1):1-22.
+17	10.1002/sim.5958	Blanche P, Dartigues JF, Jacqmin-Gadda H. Estimating and comparing time-dependent areas under receiver operating characteristic curves for censored event times with competing risks. Stat Med. 2013;32(30):5381-5397.
+18	https://CRAN.R-project.org/package=rms	Harrell FE Jr. rms: Regression Modeling Strategies. R package version 6.3-0. https://CRAN.R-project.org/package=rms. 2022.
+19	https://www.R-project.org/	R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/. 2022.
+20	10.1007/978-3-319-24277-4	Wickham H. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York. 2016.
+21	10.1093/bioinformatics/btw313	Gu Z, Eils R, Schlesner M. Complex heatmaps reveal patterns and correlations in multidimensional genomic data. Bioinformatics. 2016;32(18):2847-2849.
