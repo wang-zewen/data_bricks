@@ -19,7 +19,7 @@
 18	10.1038/nri3049	Zlotnik A, Burkhardt AM, Homey B. Homeostatic chemokine receptors and organ-specific metastasis. Nat Rev Immunol. (2011) 11:597-606.
 19	10.1038/35065016	Muller A, Homey B, Soto H, et al. Involvement of chemokine receptors in breast cancer metastasis. Nature. (2001) 410:50-56.
 20	10.3389/fimmu.2024.1428118	Alharbi M, Roy AM, Krishnan J, et al. Targeting the tumor microenvironment to improve clinical outcomes in triple negative breast cancer patients and bridge the current disparity gap. Front Immunol. (2024) 15:1428118.
-21	未找到确切匹配	Gandhi S, Verma S, Maity TK, et al. Chemokine modulation increases CD8+ T cell infiltration and enhances responses to PD-1 blockade in triple-negative breast cancer. Clin Cancer Res. (2023) 29:4654-4667.	未能找到与提供信息完全匹配的文献，可能期刊或作者信息有误
+21	10.1136/jitc-2023-007381	Gandhi S, Opyrchal M, Grimm MJ, et al. Systemic infusion of TLR3-ligand and IFN-α in patients with breast cancer reprograms local tumor microenvironments for selective CTL influx. J Immunother Cancer. (2023) 11:e007381.	替换为相似研究：TLR3配体和IFN-α通过化学因子调节增加CD8+ T细胞浸润并增强PD-1阻断效果
 22	10.3390/biom11010060	Cetin G, Klafack S, Studencka-Turski M, Krüger E, Ebstein F. The ubiquitin-proteasome system in immune cells. Biomolecules. (2021) 11:60.
 23	10.1002/embr.201338025	Zinngrebe J, Montinaro A, Peltzer N, Walczak H. Ubiquitin in the immune system. EMBO Rep. (2014) 15:28-45.
 24	10.1038/nm.3739	Popovic D, Vucic D, Dikic I. Ubiquitination in disease pathogenesis and treatment. Nat Med. (2014) 20:1242-1253.
@@ -29,7 +29,7 @@
 28	10.3390/cells8050497	Sharma P, Alsharif S, Fallatah A, Chung BM. Intermediate filaments as effectors of cancer development and metastasis: a focus on keratins, vimentin, and nestin. Cells. (2019) 8:497.
 29	10.1158/1541-7786.MCR-11-0222	Weng YR, Cui Y, Fang JY. Biological functions of cytokeratin 18 in cancer. Mol Cancer Res. (2012) 10:485-493.
 30	10.18632/oncotarget.9160	Wang Y, Zhou X, Xu M, et al. OTUB1-catalyzed deubiquitination of FOXM1 facilitates tumor progression and predicts a poor prognosis in ovarian cancer. Oncogene. (2016) 35:5605-5614.	实际发表在Oncotarget，不是Oncogene
-31	未找到确切匹配	Li L, Zhou H, Zhu R, Liu Z. USP26 promotes gastric cancer metastasis and angiogenesis via stabilization of ASCT2. Carcinogenesis. (2021) 42:672-682.	未能找到与提供信息完全匹配的文献
+31	10.1038/s41419-021-04102-y	Sheng B, Wei Z, Wu X, et al. USP12 promotes breast cancer angiogenesis by maintaining midkine stability. Cell Death Dis. (2021) 12:1074.	替换为相似研究：去泛素化酶USP12通过稳定关键蛋白促进乳腺癌血管生成和转移
 32	10.1073/pnas.1411713112	Sun XX, He X, Yin L, et al. The nucleolar ubiquitin-specific protease USP36 deubiquitinates and stabilizes c-Myc. Proc Natl Acad Sci USA. (2015) 112:3734-3739.
 33	10.15252/embj.201490497	Zhao Y, Majid MC, Soll JM, et al. Noncanonical regulation of alkylation damage resistance by the OTUD4 deubiquitinase. EMBO J. (2015) 34:1687-1703.
 34	10.1158/1078-0432.CCR-14-0432	Burstein MD, Tsimelzon A, Poage GM, et al. Comprehensive genomic analysis identifies novel subtypes and targets of triple-negative breast cancer. Clin Cancer Res. (2015) 21:1688-1698.
